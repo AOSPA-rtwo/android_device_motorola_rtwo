@@ -11,7 +11,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, device/motorola/rtwo/device.mk)
 
 # Inherit some common AOSPA stuff.
-$(call inherit-product-if-exists, vendor/aospa/config/common_full_phone.mk)
+$(call inherit-product, vendor/aospa/target/product/aospa-target.mk)
 
 PRODUCT_NAME := aospa_rtwo
 PRODUCT_DEVICE := rtwo
