@@ -15,6 +15,9 @@ TARGET_BOOTLOADER_BOARD_NAME := rtwo
 # Display
 TARGET_SCREEN_DENSITY := 400
 
+# PowerShare
+TARGET_POWERSHARE_NODE := /sys/class/power_supply/wireless/device/tx_mode
+
 # HIDL
 DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE += $(DEVICE_PATH)/device_framework_matrix_rtwo.xml
 ODM_MANIFEST_SKUS += dn dne
